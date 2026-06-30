@@ -31,7 +31,7 @@
 |-- math/                    # 线代、概率、优化等数学总结
 |-- coursework/              # 课程学习与题目整理
 |-- health/                  # 作息、运动、身体状态记录
-|-- data/                    # CSV 数据表
+|-- data/                    # Super Productivity 自动导入数据
 `-- assets/                  # 图片、结构图、展示材料
 ```
 

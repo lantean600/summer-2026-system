@@ -1,0 +1,41 @@
+﻿source_file,imported_at,week,task_id,title,project_id,project_title,is_done,created_at,due_at,done_at,estimate_minutes,actual_minutes,repeat_cfg_id,notes
+2026-06-30_225502.json,2026-06-30 22:55:08,2026-W27,rVw6ENgOvlCNdKvRjExzC,Create your first project,INBOX_PROJECT,Inbox,true,2026-06-30 21:59:39,,2026-06-30 22:31:01,0,0,,"Projects help you organize your tasks by topic. Each project has its own task list and backlog.
+
+**How to create a project:**
+1. Click the **+** button next to **Projects** in the sidebar
+2. Give it a name and pick a color
+3. Start adding tasks to it"
+2026-06-30_225502.json,2026-06-30 22:55:08,2026-W27,PTKZ2ojpwKWn86ZmLT4vR,Set up Sync,INBOX_PROJECT,Inbox,true,2026-06-30 21:59:39,,2026-06-30 22:30:59,0,0,,"Keep your data safe and accessible across devices.
+
+**How to set up:**
+1. Open **Settings** (gear icon in the sidebar)
+2. Go to **Sync**
+3. Choose a provider: SuperSync, Nextcloud, Dropbox, or local file sync
+4. Follow the setup instructions"
+2026-06-30_225502.json,2026-06-30 22:55:08,2026-W27,YwdUHDuy9tJojUcpvMkRl,Learn the keyboard shortcuts,INBOX_PROJECT,Inbox,false,2026-06-30 21:59:39,,,0,0,,"Super Productivity is designed to be used with the keyboard. Learn the shortcuts to work faster.
+
+**How to start:**
+1. Open the **sidebar menu**
+2. Go to **Help**
+3. Click **How to: Keyboard Navigation**"
+2026-06-30_225502.json,2026-06-30 22:55:08,2026-W27,TN346LBN_1oZcRQoURV7G,Go further,INBOX_PROJECT,Inbox,false,2026-06-30 21:59:39,,,0,0,,"There is much more to discover!
+
+**App Features** (in Settings) — Enable integrations, habits, and other features. Go to **Settings → App Features** to see what's available.
+
+**Boards** — Visualize your tasks in customizable Kanban-style boards. Enable them in **App Features**, then find them in the **sidebar menu**.
+
+**Schedule** — Plan your day by scheduling tasks at specific times. Drag tasks onto the **Schedule** view in the sidebar to organize your timeline.
+
+**Integrations** — Once enabled in App Features, import tasks from Jira, GitHub, GitLab, Gitea, OpenProject, CalDAV, and many more. You can also integrate your calendar. Configure them in the **Issue Provider Panel**.
+
+**Habits** — Track recurring habits and routines. Find them in the **sidebar menu** once enabled.
+
+**Plugins** — Add features like the Procrastination Buster, Automations, or Voice Reminders. Go to **Settings → Plugins**.
+
+**Customize** — Themes, dark mode, keyboard shortcuts, language, and productivity helpers are all in **Settings**."
+2026-06-30_225502.json,2026-06-30 22:55:08,2026-W27,0Ku10JjyQF-XctL6bEe9R,数学,INBOX_PROJECT,Inbox,true,2026-06-30 22:08:47,2026-06-30 08:30:00,2026-06-30 22:10:19,210,0,vpFTrbWXiHXn9e22f2kUg,
+2026-06-30_225502.json,2026-06-30 22:55:08,2026-W27,n6euJnAapcFRo9aGqJ_VH,科研 ,INBOX_PROJECT,Inbox,false,2026-07-01 12:00:00,2026-07-01 14:30:00,,240,0,GGUaEGFdgPB3wMRaV2ptT,
+2026-06-30_225502.json,2026-06-30 22:55:08,2026-W27,t3gBWAdGVAC877NqUEJB8,复盘,INBOX_PROJECT,Inbox,false,2026-07-01 12:00:00,2026-07-01 21:00:00,,30,0,-qhabrFZiPsA_kpv7MxLS,
+2026-06-30_225502.json,2026-06-30 22:55:08,2026-W27,F-rosNzJDf24xwACTNaOl,《Introduction to Probability》Bertsekas & Tsitsiklis,YcA96tHOuw9vRV3CeJejJ,数学,false,2026-06-30 22:21:11,,,0,0,,
+2026-06-30_225502.json,2026-06-30 22:55:08,2026-W27,8_nEn_cX2a7VGs_3ky1QV,脑部影像融合&病理切片预处理,2K3GWiF4hBZBe_ywIUsn7,科研项目,false,2026-06-30 22:23:20,,,0,0,,
+2026-06-30_225502.json,2026-06-30 22:55:08,2026-W27,9f66NR3AEckL0CUj0QnNG,六级词汇,XMoxRt3ZGlg8tqMmVc7UQ,六级,false,2026-06-30 22:23:33,,,0,0,,

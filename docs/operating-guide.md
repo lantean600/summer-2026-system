@@ -33,7 +33,7 @@ Obsidian Git 插件是可选项。如果不想折腾插件，就继续用 PowerS
    - 科研：`research/papers` 或 `research/experiments`
    - 数学：`math`
    - 课业：`coursework`
-   - 健康数据：`health` 或 `data/health-log.csv`
+   - 健康与作息：先写进 daily log，周末结合 Super Productivity 汇总判断
 6. 晚上更新 Issue 状态，并在 daily log 里写清楚卡点和明天第一步。
 7. 晚上同步一次 Git：
 
@@ -53,6 +53,23 @@ git push
 4. 对科研、数学、课业、健康分别写事实，不写空泛感受。
 5. 下周只保留最重要的系统调整。
 6. 每周只调整一次仓库结构或模板，避免每天优化系统。
+
+## 每周导入 Super Productivity 数据
+
+周复盘前运行：
+
+```powershell
+cd D:\summer-2026-system
+python scripts/import_superproductivity.py
+```
+
+脚本会读取 Super Productivity 自动备份目录中的最新备份，并覆盖生成 `data/super-productivity/` 下的汇总文件。复盘时优先看：
+
+- `data/super-productivity/weekly-summary.csv`
+- `data/super-productivity/project-weekly-summary.csv`
+- `data/super-productivity/task-detail.csv`
+
+不要手动编辑 `data/super-productivity/` 里的 CSV；需要修正时回到 Super Productivity 修改源数据后重新运行脚本。
 
 ## 什么放进 GitHub
 
