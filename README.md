@@ -10,15 +10,13 @@
 - 作息健康是系统约束：睡眠、运动、复盘不能依赖临时意志力。
 - 每天至少留下一个可检查产出：总结、推导、实验记录、代码提交、论文解读、错题归因都可以。
 
-## 本周入口
+## 日常只看三个入口
 
-- 当前阶段：[docs/summer-roadmap.md](docs/summer-roadmap.md)
-- 每日记录：[logs/daily](logs/daily)
-- 每周复盘：[reviews/weekly](reviews/weekly)
-- 科研主线：[research](research)
-- 数学主线：[math](math)
-- 课业保底：[coursework](coursework)
-- 健康数据：[health](health)
+1. 今天写什么：[logs/daily](logs/daily)
+2. 本周怎么判断：[reviews/weekly](reviews/weekly)
+3. 正式成果放哪里：[research](research)、[math](math)、[coursework](coursework)、[health](health)
+
+平时不要在所有文件夹里来回找。先写 daily log，周末再整理成正式成果。
 
 ## 仓库结构
 
@@ -44,6 +42,8 @@
 3. 至少产生一个可检查产出。
 4. 晚上记录明天第一件事。
 
+本地推荐用 Obsidian 打开整个 `D:\summer-2026-system` 文件夹。Daily Notes 目录设为 `logs/daily`，模板目录设为 `templates`。
+
 ## 每周最小闭环
 
 1. 关闭或更新本周 Milestone。
@@ -54,9 +54,19 @@
 ## 推荐工具分工
 
 - GitHub：任务、阶段、产出、复盘、版本控制。
-- Obsidian 或本地 Markdown：草稿、灵感、推导过程、临时笔记。
+- Obsidian：本地 Markdown、daily log、反向链接、阶段性整理。
 - Calendar / Google Tasks：起床、学习块、运动、睡前关机等时间约束。
 - Zotero：论文 PDF、引用、批注。
 - Anki：术语、公式、定理条件、论文核心概念等长期记忆。
 
 不要第一天就把所有自动化搭完。先让每日记录、Issue 推进、周复盘连续跑两周。
+
+## 晚上同步
+
+```powershell
+cd D:\summer-2026-system
+git status
+git add .
+git commit -m "Daily log YYYY-MM-DD"
+git push
+```

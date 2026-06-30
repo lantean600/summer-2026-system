@@ -1,18 +1,58 @@
-# Operating Guide
+# Operating Guide: Obsidian + Git
+
+## 本地维护原则
+
+这个仓库虽然有多个分类目录，但日常维护只按三个入口走：
+
+1. `logs/daily`：当天真实发生了什么，允许粗糙。
+2. `reviews/weekly`：每周判断系统是否有效。
+3. `research`、`math`、`coursework`、`health`：只放整理后的正式成果。
+
+`docs`、`templates`、`.github` 平时不要动，只有系统升级时才改。
+
+## Obsidian 设置
+
+在 Obsidian 中选择 `Open folder as vault`，路径选 `D:\summer-2026-system`。
+
+已经随仓库配置好的默认项：
+
+- Daily Notes 目录：`logs/daily`
+- Daily Notes 模板：`templates/daily-log.md`
+- Templates 目录：`templates`
+- Backlinks：开启，用来连接论文、数学概念、实验记录
+
+Obsidian Git 插件是可选项。如果不想折腾插件，就继续用 PowerShell 执行 `git add`、`git commit`、`git push`。
 
 ## 每天怎么用
 
-1. 打开 GitHub Project 或 Issues，看 `Today` 列。
-2. 从 `templates/daily-log.md` 复制一份到 `logs/daily/YYYY-MM-DD.md`。
+1. 打开 Obsidian 的 Daily Note，或从 `templates/daily-log.md` 复制一份到 `logs/daily/YYYY-MM-DD.md`。
+2. 打开 GitHub Project 或 Issues，看 `Today` 列。
 3. 当天只承诺 1 到 3 个关键任务。
-4. 晚上更新 Issue 状态，并在 daily log 里写清楚卡点和明天第一步。
+4. 临时想法先写进当天 daily log，不要一有想法就新建分类文件。
+5. 当天产生的正式内容再放进对应目录：
+   - 科研：`research/papers` 或 `research/experiments`
+   - 数学：`math`
+   - 课业：`coursework`
+   - 健康数据：`health` 或 `data/health-log.csv`
+6. 晚上更新 Issue 状态，并在 daily log 里写清楚卡点和明天第一步。
+7. 晚上同步一次 Git：
+
+```powershell
+cd D:\summer-2026-system
+git status
+git add .
+git commit -m "Daily log YYYY-MM-DD"
+git push
+```
 
 ## 每周怎么用
 
 1. 周日晚上从 `templates/weekly-review.md` 复制一份到 `reviews/weekly/week-XX.md`。
 2. 回看本周关闭的 Issues、提交的文件和 daily logs。
-3. 对科研、数学、课业、健康分别写事实，不写空泛感受。
-4. 下周只保留最重要的系统调整。
+3. 把真正值得保留的内容沉淀到 `research`、`math`、`coursework`。
+4. 对科研、数学、课业、健康分别写事实，不写空泛感受。
+5. 下周只保留最重要的系统调整。
+6. 每周只调整一次仓库结构或模板，避免每天优化系统。
 
 ## 什么放进 GitHub
 
