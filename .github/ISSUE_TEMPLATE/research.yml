@@ -1,0 +1,36 @@
+name: Research
+description: 论文阅读、复现、实验、报告任务
+title: "[Research] "
+labels: ["area: research", "type: task"]
+body:
+  - type: input
+    id: paper
+    attributes:
+      label: 论文 / 项目
+      placeholder: Title, repo, or link
+  - type: textarea
+    id: goal
+    attributes:
+      label: 本任务目标
+      placeholder: 例如：读懂模型结构并画出数据流图。
+    validations:
+      required: true
+  - type: checkboxes
+    id: reproducibility
+    attributes:
+      label: 可复现性检查
+      options:
+        - label: 有代码
+        - label: 有数据或可替代数据
+        - label: 算力可承受
+        - label: 依赖可配置
+        - label: 指标清楚
+  - type: textarea
+    id: output
+    attributes:
+      label: 预期产出
+      value: |
+        - [ ] 论文笔记
+        - [ ] 结构图
+        - [ ] 实验记录
+        - [ ] 报告段落

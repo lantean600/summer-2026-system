@@ -1,0 +1,27 @@
+name: Review
+description: 每日或每周复盘任务
+title: "[Review] "
+labels: ["type: review"]
+body:
+  - type: dropdown
+    id: cadence
+    attributes:
+      label: 复盘类型
+      options:
+        - daily
+        - weekly
+        - milestone
+    validations:
+      required: true
+  - type: textarea
+    id: facts
+    attributes:
+      label: 事实记录
+      placeholder: 本周期关闭了哪些任务、产出了哪些文件、哪些目标延期？
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: 下一个调整
+      placeholder: 只写一个最影响执行的调整。

@@ -1,0 +1,38 @@
+name: Task
+description: 可完成、可验收的学习或项目任务
+title: "[Task] "
+labels: ["type: task"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: 方向
+      options:
+        - research
+        - math
+        - coursework
+        - health
+        - system
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: 验收标准
+      description: 完成后能看到什么具体产出？
+      placeholder: 例如：跑通 baseline，并提交实验记录。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 拆解步骤
+      value: |
+        - [ ] 
+        - [ ] 
+        - [ ] 
+  - type: textarea
+    id: blockers
+    attributes:
+      label: 可能卡点
+      placeholder: 依赖、数据、算力、概念、时间等。

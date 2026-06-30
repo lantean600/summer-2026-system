@@ -1,0 +1,29 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.agents/
+.codex/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node
+node_modules/
+dist/
+build/
+
+# Data / generated outputs
+*.log
+*.tmp
+*.cache
+
+# Large local-only research assets
+data/raw/
+data/external/
+models/
+checkpoints/
