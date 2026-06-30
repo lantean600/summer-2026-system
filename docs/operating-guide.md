@@ -39,10 +39,19 @@ Obsidian Git 插件是可选项。如果不想折腾插件，就继续用 PowerS
 
 ```powershell
 cd D:\summer-2026-system
-git status
-git add .
-git commit -m "Daily log YYYY-MM-DD"
-git push
+.\sync.ps1
+```
+
+如果 PowerShell 执行策略拦截，改用：
+
+```powershell
+.\sync.cmd
+```
+
+自定义提交说明：
+
+```powershell
+.\sync.ps1 -Message "Daily log 2026-06-30"
 ```
 
 ## 每周怎么用
@@ -60,10 +69,10 @@ git push
 
 ```powershell
 cd D:\summer-2026-system
-python scripts/import_superproductivity.py
+.\sync.ps1
 ```
 
-脚本会读取 Super Productivity 自动备份目录中的最新备份，并覆盖生成 `data/super-productivity/` 下的汇总文件。复盘时优先看：
+一键同步脚本会先读取 Super Productivity 自动备份目录中的最新备份，覆盖生成 `data/super-productivity/` 下的汇总文件，然后提交并推送到 GitHub。复盘时优先看：
 
 - `data/super-productivity/weekly-summary.csv`
 - `data/super-productivity/project-weekly-summary.csv`
